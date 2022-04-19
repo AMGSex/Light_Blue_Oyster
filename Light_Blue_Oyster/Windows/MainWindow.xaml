@@ -1,0 +1,32 @@
+﻿<Window x:Class="Light_Blue_Oyster.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Light_Blue_Oyster"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Голубая Устрица" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="44"/>
+        <StackPanel Grid.Row="1" Grid.Column="1" Margin="0,20,0,0">
+            <Label Content="Логин" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="22" Margin="10,0,0,0"/>
+            <TextBox x:Name="txt_log" Margin="0,0,0,20" FontSize="18"/>
+
+            <Label Content="Пароль" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="22" Margin="10,0,0,0"/>
+            <PasswordBox x:Name="txt_pass" Margin="0,0,0,20" FontSize="18"/>
+        </StackPanel>
+
+        <Button x:Name="btn_log" Content="Войти" Grid.Column="1" Grid.Row="2" Margin="35" Width="200"/>
+    </Grid>
+</Window>
